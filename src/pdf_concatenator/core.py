@@ -30,7 +30,7 @@ def create_slip_sheet(text: str, output_pdf_path: str) -> None:
     c.showPage()
     c.save()
 
-def convert_to_pdf(input_file: Path, output_dir: Path) -> Optional[str]:
+def convert_to_pdf(input_file: Path, output_dir: Path) -> str | None:
     """
     Convert input file to PDF if needed.
 
@@ -39,7 +39,7 @@ def convert_to_pdf(input_file: Path, output_dir: Path) -> Optional[str]:
         output_dir: Directory to save converted PDF
 
     Returns:
-        Optional[str]: Path to the PDF file, or None if conversion failed
+        str | None: Path to the PDF file, or None if conversion failed
     """
     ext = input_file.suffix.lower()
     if ext == ".pdf":

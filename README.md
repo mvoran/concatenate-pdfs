@@ -36,11 +36,11 @@ PDFConcatenationTool/
 
 ## Requirements
 
-- Python 3.6+
+- Python 3.10 or higher
 - Dependencies:
-  - PyPDF2
-  - reportlab
-  - Pillow (PIL)
+  - PyPDF2 >= 3.0.0
+  - reportlab >= 4.0.0
+  - Pillow >= 10.0.0
 
 ## Installation
 
