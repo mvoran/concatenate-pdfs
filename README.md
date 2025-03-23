@@ -10,6 +10,14 @@ A command-line tool that combines multiple PDF and JPEG files into a single PDF 
 - Supports both PDF and JPEG input formats
 - Creates a title page with the output filename
 
+## Sample Output
+
+A sample output file is included in the repository as `Sample Output.pdf`. This demonstrates:
+- The title page format
+- How slip sheets appear between documents
+- The overall document structure and formatting
+- The quality of JPEG to PDF conversion
+
 ## Requirements
 
 - Python 3.6+

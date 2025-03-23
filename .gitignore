@@ -4,6 +4,9 @@ venv/
 env/
 .env/
 
+# Sample output directory
+sample_doc_creation/
+
 # Python bytecode
 __pycache__/
 *.py[cod]
