@@ -55,14 +55,16 @@ python ConcatenatePDFs.py -o output.pdf -i /path/to/files
 ```
 
 Options:
-- `-o, --output`: Output file name (required)
+- `-o, --output`: Output file name (required). If no file extension is provided, '.pdf' will be added automatically. If any extension exists, it will be used as-is
 - `-i, --input`: Input directory containing files to concatenate (default: current directory)
 - `--outdir`: Directory to save the combined PDF (defaults to input directory)
 
 Example:
 ```bash
 # Combine all PDFs and JPEGs from the current directory
-python ConcatenatePDFs.py -o combined.pdf
+python ConcatenatePDFs.py -o combined          # Will create combined.pdf
+python ConcatenatePDFs.py -o combined.pdf      # Will create combined.pdf
+python ConcatenatePDFs.py -o combined.doc      # Will create combined.doc
 
 # Combine files from a specific directory and save to another location
 python ConcatenatePDFs.py -i /path/to/source --outdir /path/to/destination -o combined.pdf

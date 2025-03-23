@@ -63,7 +63,10 @@ def main():
 
     input_dir = Path(args.input).resolve()
     output_dir = Path(args.outdir if args.outdir is not None else args.input).resolve()
-    output_file = output_dir / args.output
+    
+    # Add .pdf extension only if no extension exists
+    output_filename = args.output if Path(args.output).suffix else args.output + '.pdf'
+    output_file = output_dir / output_filename
 
     # Allowed file extensions: PDF and JPEG
     allowed_ext = {".pdf", ".jpg", ".jpeg"}
